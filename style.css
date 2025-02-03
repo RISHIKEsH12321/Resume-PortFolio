@@ -107,82 +107,63 @@ body {
     display: block;
 }
   
-  #portScroll {
-    background-color: #26816E;
-    padding: 2% 2% 2% 2%;
-    border-radius: 40px;
-    margin-left: 2%;
-    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
-  }
-  
-  #about #portScroll img {
-    text-align: left;
-    margin-right: 5px;
-    width: 18px;
-  }
-  
-  #portScroll a,
-  #portScroll a:hover {
-    color: white;
-    text-decoration: none;
-  }
-  
-  #email:hover,
-  #portScroll:hover {
-    box-shadow: 5px 15px 30px #062928;
-    background-color: #1A616C;
-    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
-    cursor: pointer;
-  }
-  
-  #self img {
-    width: 35%;
-    float: right;
-    border: solid 8px #26816E;
-    border-radius: 2000px;
-    box-shadow: 5px 15px 30px #062928;
-  }
-  
-  .btn-container{
-    display: flex;
-  }
-  
-  /* PORTFOLIO */
-  
-  #portfolio {
-    font-family: 'Amatic SC', cursive;
-    background-color: #68BDCA;
-    text-decoration: none;
-    color: white;
-    padding: 5% 5% 5% 5%;
-    width: auto;
-    height: 100vh;
-  }
-  
-  #portfolio h3 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 15pt;
-  }
-  
-  #port img {
-    width: 500px;
-    opacity: 0.5;
-    transition: opacity 0.5s, box-shadow 0.5s;
-  }
-  
-  #port img:hover {
-    opacity: 1;
-    box-shadow: 0px 10px 50px #406D91;
-    transition: opacity 0.5s, box-shadow 0.5s;
-  }
-
-/* Set a consistent height for all images */
-.img-responsive.thumbnail {
-    height: 300px; 
-    object-fit:contain;
-    width: 100%;
-    display: block;
+#portScroll {
+  background-color: #26816E;
+  padding: 2% 2% 2% 2%;
+  border-radius: 40px;
+  margin-left: 2%;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
 }
+
+#about #portScroll img {
+  text-align: left;
+  margin-right: 5px;
+  width: 18px;
+}
+
+#portScroll a,
+#portScroll a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#email:hover,
+#portScroll:hover {
+  box-shadow: 5px 15px 30px #062928;
+  background-color: #1A616C;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  cursor: pointer;
+}
+
+#self img {
+  width: 35%;
+  float: right;
+  border: solid 8px #26816E;
+  border-radius: 2000px;
+  box-shadow: 5px 15px 30px #062928;
+}
+
+.btn-container{
+  display: flex;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  font-family: 'Amatic SC', cursive;
+  background-color: #68BDCA;
+  text-decoration: none;
+  color: white;
+  padding: 5% 5% 5% 5%;
+  width: auto;
+  height: 100vh;
+}
+
+#portfolio h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 15pt;
+}
+
 
 /* Style the table to make sure the cells align properly */
 table {
@@ -229,109 +210,167 @@ td {
     font-weight: bold;
 }
 
+.carousel-container {
+  position: relative;
+  width: 500px; /* Adjust width to fit inside table cell */
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%; /* Keep it responsive */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 500px;
+  height: 100%;
+  object-fit: contain;
+  flex: 0 0 100%; /* Ensures only one image is visible at a time */
+}
+
+  
+/* #port img {
+  width: 500px;
+  opacity: 0.8;
+  transition: opacity 0.5s, box-shadow 0.5s;
+} */
+
+#port .carousel-slide:hover img {
+  opacity: 1;
+  box-shadow: 0px 10px 50px #406D91;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+/* Set a consistent height for all images */
+.img-responsive.thumbnail {
+  height: 300px; 
+  object-fit:contain;
+  width: 100%;
+  padding: 0 auto 0 auto;
+  display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+
   
   
-  /* NAV */
-  
-  #openmenu {
-    font-family: 'Amatic SC', cursive;
-    font-size: 20pt;
-    background-color: #68BDCA;
-    border-bottom: solid 2px white;
-    border-right: solid 2px white;
-    position: fixed;
-    padding: 2px;
-    width: 10%;
-    text-align: center;
-    top: 0;
-    left: 0;
-    transition: width 0.5s;
-  }
-  
-  #openmenu:hover {
-    width: 15%;
-    transition: width 0.5s;
-    cursor: pointer;
-  }
-  
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 100%;
-    width: 0;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  
-  /* Position the content inside the overlay */
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  
-  /* The navigation links inside the overlay */
-  
+/* NAV */
+#openmenu {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20pt;
+  background-color: #68BDCA;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  position: fixed;
+  padding: 2px;
+  width: 10%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+#openmenu:hover {
+  width: 15%;
+  transition: width 0.5s;
+  cursor: pointer;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px !important;
+  /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
   .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
+    font-size: 20px
   }
-  
-  
-  /* When you mouse over the navigation links, change their color */
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  
-  /* Position the close button (top right corner) */
-  
   .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px !important;
-    /* Override the font-size specified earlier (36px) for all navigation links */
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
   }
-  
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px
-    }
-    .closebtn {
-      font-size: 40px !important;
-      top: 15px;
-      right: 35px;
-    }
-  }
+}

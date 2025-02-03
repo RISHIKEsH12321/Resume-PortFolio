@@ -70,7 +70,7 @@
         </span>
         <span id="portScroll">
             <a class="smoothScroll" href="#portfolio">
-                <img src="http://www.meegankent.com/images/portfolio-icon2.png" alt="Portfolio Icon"> View My Portfolio
+                <img src="http://www.meegankent.com/images/portfolio-icon2.png" alt="Portfolio Icon"> View My Projects
             </a>
         </span>
     </div>
@@ -81,149 +81,245 @@
     <h1>Portfolio</h1>
     <h3>Here you'll find some projects I've worked on! Click on a project to go to the GitHub Repo.</h3>
     <br>
-    <center>
-        <div id="port" class="container">
-            <table>
-                <tr>
-                    <td>
-                        <a class="pointer" href="https://github.com/RISHIKEsH12321/Assignment1-">
-                            <img class="img-responsive thumbnail" src="images/donkeyCakes.png" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>Donkey Cakes</h1>
-                            <h3>Simple Front End Cake Website</h3>
-                            <p>
-                                This website is for Donkey Cakes customers. <br>
-                                The purpose of this website is to allow customers to browse through <br>
-                                the selection of cakes and get a idea of what kinds of cakes there are. <br>
-                                Then, they can purchase anycake they desire in the cart tab. <br>
-                                If they have any probelms or questions, they can contact us via the email and <br>
-                                phone number given at the bottom of every page. <br>
-                                They can also use the help pagee to send a detailed query for th Donkey Cakes staff.<br><br>
-                                Tools: HTML, CSS, JS
-                            </p>                        
+    <div id="port" class="container">
+        <table>
+            
+            <!-- Donkey Cakes -->
+            <tr>
+                <td>
+                    <div class="carousel-container" data-carousel="DonkeyCakes">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/DonkeyCakes/donkeyCakes.png" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/DonkeyCakes/Categories.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/DonkeyCakes/Cake.png" alt="Image 3">
+                            <img class="img-responsive thumbnail" src="images/DonkeyCakes/Pay.png" alt="Image 4">
                         </div>
-                    </td>
-                </tr>
+                        <button class="prev" data-carousel="DonkeyCakes">&#10094;</button>
+                        <button class="next" data-carousel="DonkeyCakes">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>Donkey Cakes</h1>
+                        <h3 class="carousel-head" data-carousel="DonkeyCakes">Simple Front End Cake Website</h3>
+                        <p class="carousel-text" data-carousel="DonkeyCakes">
+                            This website is for Donkey Cakes customers. <br>
+                            The purpose of this website is to allow customers to browse through <br>
+                            the selection of cakes and get a idea of what kinds of cakes there are. <br>
+                            Then, they can purchase anycake they desire in the cart tab. <br>
+                            If they have any probelms or questions, they can contact us via the email and <br>
+                            phone number given at the bottom of every page. <br>
+                            They can also use the help pagee to send a detailed query for th Donkey Cakes staff.<br>                            
+                        </p>
+                        <p>Front-end: HTML, CSS, JS</p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/Assignment1-"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <a class="pointer" href="https://github.com/RISHIKEsH12321/PRG2Assignment">
-                            <img class="img-responsive thumbnail" src="images/prg2-IceCreamShop.png" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>Ice Cream Shop Mangagement System</h1>
-                            <p>
-                                This C# program is an Ice Cream Shop Management System that handles customer and order management, <br>
-                                including registering customers, creating and modifying orders, and checking out. <br>
-                                It provides detailed monthly and yearly sales breakdowns. <br>
-                                The data is stored and retrieved from a CSV file. <br>
-                                The interface uses a menu-driven approach for user interaction.<br><br>
-                                Tools: C#
-                            </p>                        
+            <!-- PRG Ice Cream Shop -->
+            <tr>
+                <td>
+                             
+                    <div class="carousel-container" data-carousel="IceCream">
+                        <div class="carousel-slide">
+                            <img src="images/prg2-IceCreamShop.png" alt="HomePage">                               
                         </div>
-                    </td>
-                </tr>
+                        <button class="prev" data-carousel="IceCream" style="display: none !important;">&#10094;</button>
+                        <button class="next" data-carousel="IceCream" style="display: none !important;">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>Ice Cream Shop Mangagement System</h1>
+                        <h3 class="carousel-head" data-carousel="IceCream">OOP Ice Cream Console Program</h3>
+                        <p class="carousel-text" data-carousel="IceCream">
+                            This C# program is an Ice Cream Shop Management System that handles customer and order management, <br>
+                            including registering customers, creating and modifying orders, and checking out. <br>
+                            It provides detailed monthly and yearly sales breakdowns. <br>
+                            The data is stored and retrieved from a CSV file. <br>
+                            The interface uses a menu-driven approach for user interaction.<br>                         
+                        </p>
+                        <p>Front-end: HTML, CSS, JS </p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/PRG2Assignment-"><p>GitHub Link</p></a>
+                    </div> 
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <a class="pointer" href="https://github.com/RISHIKEsH12321/FED-Assignment-2">
-                            <img class="img-responsive thumbnail" src="images/TechStudio.png" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>TechStudio</h1>
-                            <h3>Front End Electronic E-commerce Website</h3>
-                            <p>
-                                We aimed to make online shopping fun and convinient via gamification.<br>
-                                To do this, we first created our own e-commerce website using tools such as RestDB,<br>
-                                HTML, JS and CSS. After that using JS we made games so that cutomers will have <br>
-                                the chance to win big by spending points which they can earn via purchasing items. <br>
-                                We also made navigation seamless so that users will not be confused when using the website.<br><br>
-                                Tools: HTML, CSS, JS
-                            </p>                        
+           <!-- TechStudio -->
+            <tr>
+                <td>
+                    <div class="carousel-container" data-carousel="TechStudio">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/TechStudio/TechStudio.png" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/TechStudio/Catalouge.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/TechStudio/Item.png" alt="Image 3">
+                            <img class="img-responsive thumbnail" src="images/TechStudio/Cart.png" alt="Image 4">
                         </div>
-                    </td>
-                </tr>
+                        <button class="prev" data-carousel="TechStudio">&#10094;</button>
+                        <button class="next" data-carousel="TechStudio">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>TechStudio</h1>
+                        <h3 class="carousel-head" data-carousel="TechStudio">Front End Electronic E-commerce Website</h3>
+                        <p class="carousel-text" data-carousel="TechStudio">
+                            We aimed to make online shopping fun and convinient via gamification.<br>
+                            To do this, we first created our own e-commerce website using tools such as RestDB,<br>
+                            HTML, JS and CSS. After that using JS we made games so that cutomers will have <br>
+                            the chance to win big by spending points which they can earn via purchasing items. <br>
+                            We also made navigation seamless so that users will not be confused when using the website.<br><br>                            
+                        </p>
+                        <p>Front-end: HTML, CSS, JS </p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/FED-Assignment-2"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <a class="pointer tall-img" href="https://github.com/RISHIKEsH12321/MAD24_P01_Team3">
-                            <img class="img-responsive thumbnail" src="images/PlanHub.jpg" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>PlanHub</h1>
-                            <h3>Android App Developed Using Java and Android Studio</h3>
-                            <p>
-                                Introducing PlanHub, your friendly travel companion, designed to simplify every aspect of your journey. <br>
-                                From a seamless login and customizations to intuitive event management and currency converter,<br>
-                                our basic features ensure effortless planning and exploration along with a customizable touch <br>
-                                to your app. As you progress to more advanced features, unlock collaborative planning via <br>
-                                events between users, community engagement through interactive travel posts, and personalized <br>
-                                recommendations powered by intelligent algorithms. With biometric authentication and timely <br>
-                                notifications, PlanHub elevates your travel experience, making every adventure memorable and<br>
-                                hassle-free. Join us as we redefine the way you travel.<br><br>
-                                Tools: Java, Android Studio
-                            </p>
+            <!-- PlanHub -->
+            <tr>
+                <td>
+                    <div class="carousel-container" data-carousel="PlanHub">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/PlanHub.jpg" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/BioMetric.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/Settings.jpeg" alt="Image 3">                            
+                            <img class="img-responsive thumbnail" src="images/PlanHub/EventEdit.jpeg" alt="Image 4">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/Notification.jpeg" alt="Image 5">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/QrScan.jpeg" alt="Image 6">
+                            <img class="img-responsive thumbnail" src="images/PlanHub/QrDisplay.jpeg" alt="Image 7">
                         </div>
-                    </td>
-                </tr>
+                        <button class="prev" data-carousel="PlanHub">&#10094;</button>
+                        <button class="next" data-carousel="PlanHub">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>PlanHub</h1>
+                        <h3 class="carousel-head" data-carousel="PlanHub">Android App Developed Using Java and Android Studio</h3>
+                        <p class="carousel-text"  data-carousel="PlanHub">
+                            Introducing PlanHub, your friendly travel companion, designed to simplify every aspect of your journey. <br>
+                            From a seamless login and customizations to intuitive event management and currency converter,
+                            our basic features ensure effortless planning and exploration along with a customizable touch
+                            to your app. <br>
+                            As you progress to more advanced features, unlock collaborative planning via <br>
+                            events between users, community engagement through interactive travel posts, and personalized <br>
+                            recommendations powered by intelligent algorithms. <br>                            
+                            With biometric authentication and timely notifications, PlanHub elevates your travel experience,
+                            making every adventure memorable and<br>
+                            hassle-free. Join us as we redefine the way you travel.<br>                            
+                        </p>
+                        <p> Tools: Java, Android Studio, FireBase </p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/MAD24_P01_Team3"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <a class="pointer" href="https://github.com/RISHIKEsH12321/SPM_ASSIGNMENT_NAC">
-                            <img class="img-responsive thumbnail" src="images/NgeeAnnCity.png" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>Ngee Ann City</h1>
-                            <h3>Front End City Builing Game</h3>
-                            <p>
-                                In Ngee Ann City, you play as the mayor, aiming to build the happiest and most prosperous city. <br>
-                                The game offers Arcade mode with limited coins and a 20x20 grid,<br>
-                                and Free Play mode with unlimited resources.<br>
-                                In Arcade, start with 16 coins and construct buildings each turn,<br>
-                                with placement restricted to adjacent squares for connected growth.<br><br>
-                                Tools: HTML, CSS, JS
-                            </p>                        
+            <!-- Ngee Ann City -->
+            <tr>
+                <td>                    
+                    <div class="carousel-container" data-carousel="NgeeAnnCity">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/NgeeAnnCity/NgeeAnnCity.png" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/NgeeAnnCity/Game.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/NgeeAnnCity/Profile.png" alt="Image 3">
+                            <img class="img-responsive thumbnail" src="images/NgeeAnnCity/About.png" alt="Image 4">
                         </div>
-                    </td>
-                </tr>
+                        <button class="prev" data-carousel="NgeeAnnCity">&#10094;</button>
+                        <button class="next" data-carousel="NgeeAnnCity">&#10095;</button>
+                    </div>                        
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>Ngee Ann City</h1>
+                        <h3 class="carousel-head" data-carousel="NgeeAnnCity">Front End City Building Game</h3>
+                        <p class="carousel-text" data-carousel="NgeeAnnCity">
+                            In Ngee Ann City, you play as the mayor, aiming to build the happiest and most prosperous city. <br>
+                            The game offers Arcade mode with limited coins and a 20x20 grid,<br>
+                            and Free Play mode with unlimited resources.<br>
+                            In Arcade, start with 16 coins and construct buildings each turn,<br>
+                            with placement restricted to adjacent squares for connected growth.<br>                            
+                        </p>
+                        <p>Front-end: HTML, CSS, JS</p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/SPM_ASSIGNMENT_NAC"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <a class="pointer" href="https://github.com/RISHIKEsH12321/BED-Assignment1_P04_Team_3">
-                            <img class="img-responsive thumbnail" src="images/AgriDynamic.png" alt="HomePage">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="project-details">
-                            <h1>AgriDynamic</h1>
-                            <h3>Website with Backend And Front-end</h3>
-                            <p>
-                                AgriDynamic is a comprehensive platform dedicated to advancing the agricultural sector <br>
-                                by addressing the challenges posed by technology, political, and climate changes. <br>
-                                Our website provides valuable insights and resources across various industries <br>
-                                such as Agriculture, Crop-Production, Livestock Farming, Horticulture, and AgroTechnology.<br>
-                                With AgriDynamic, users can access a wealth of industry information, engage in interactive quizzes,<br>
-                                and utilize cutting-edge tools to enhance their agricultural knowledge and practices.<br><br>
-                                Front-end: HTML, CSS, JS<br>
-                                Backend: SQL, JS
-                            </p>                        
+            <!-- AgriDynamic -->
+            <tr>
+                <td>
+                    <div class="carousel-container" data-carousel="AgriDynamic">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/AgriDynamic/Home.png" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/AgriDynamic/Industry.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/AgriDynamic/AdminIndustry.png" alt="Image 3">
+                            <img class="img-responsive thumbnail" src="images/AgriDynamic/Quiz.png" alt="Image 4">
+                            <img class="img-responsive thumbnail" src="images/AgriDynamic/ChatBot.png" alt="Image 5">
                         </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </center>
+                        <button class="prev" data-carousel="AgriDynamic">&#10094;</button>
+                        <button class="next" data-carousel="AgriDynamic">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>AgriDynamic</h1>
+                        <h3 class="carousel-head" data-carousel="AgriDynamic">AgriDynamic: Enhancing Agricultural Knowledge</h3>
+                        <p class="carousel-text" data-carousel="AgriDynamic">
+                            AgriDynamic is a comprehensive platform dedicated to advancing the agricultural sector <br>
+                            by addressing the challenges posed by technology, political, and climate changes. <br>
+                            Our website provides valuable insights and resources across various industries <br>
+                            such as Agriculture, Crop-Production, Livestock Farming, Horticulture, and AgroTechnology.<br>
+                            With AgriDynamic, users can access a wealth of industry information, engage in interactive quizzes,<br>
+                            and utilize cutting-edge tools to enhance their agricultural knowledge and practices.<br>
+                        </p>
+                        <p> 
+                            Front-end: HTML, CSS, JS<br>
+                            Backend: SQL, JS
+                        </p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/BED-Assignment1_P04_Team_3"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- OCBC: ATM: For Now & Beyond -->
+            <tr>
+                <td>
+                    <div class="carousel-container" data-carousel="ATM">
+                        <div class="carousel-slide">
+                            <img class="img-responsive thumbnail" src="images/OCBC/Index.png" alt="Image 1">
+                            <img class="img-responsive thumbnail" src="images/OCBC/FaceID.png" alt="Image 2">
+                            <img class="img-responsive thumbnail" src="images/OCBC/Voice.png" alt="Image 3">
+                            <img class="img-responsive thumbnail" src="images/OCBC/NeatestATM.png" alt="Image 4">
+                            <img class="img-responsive thumbnail" src="images/OCBC/NoteCount.png" alt="Image 5">
+                            <img class="img-responsive thumbnail" src="images/OCBC/Graph.png" alt="Image 6">                            
+                            <img class="img-responsive thumbnail" src="images/OCBC/Report.png" alt="Image 7">
+                        </div>
+                        <button class="prev" data-carousel="ATM">&#10094;</button>
+                        <button class="next" data-carousel="ATM">&#10095;</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-details">
+                        <h1>OCBC: ATM: For Now & Beyond</h1>
+                        <h3 class="carousel-head" data-carousel="ATM">ATM with new Innovative Features</h3>
+                        <p class="carousel-text" data-carousel="ATM">
+                            OCBC's current ATM network provides essential banking services, but there are opportunities<br>
+                            to enhance the customer experience by addressing emerging demands for greater accessibility,<br>
+                            security and customer assistance.<br>                    
+                        </p>
+                        <p>
+                            Front-end: HTML, CSS, JS<br>
+                            Backend: SQL, JS
+                        </p>
+                        <a class="pointer" href="https://github.com/RISHIKEsH12321/BED-Assignment1_P04_Team_3"><p>GitHub Link</p></a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
 </div>
 
 
